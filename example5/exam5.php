@@ -44,10 +44,10 @@
 				?>
 				<h3>Add country</h3>
 				<div class="block_input">
-					<input type="text" name="title_country" placeholder="The name of the country">
+					<input type="text" id="title_country" name="title_country" value="<?php echo htmlspecialchars(stripslashes($_POST['title_country']), ENT_QUOTES)?>" placeholder="The name of the country">
 				</div>
 				<div class="block_input">
-					<input type="text" name="population_country" placeholder="Country population">
+					<input type="text" id="population_country" name="population_country" value="<?php echo htmlspecialchars(stripslashes($_POST['population_country']), ENT_QUOTES)?>" placeholder="Country population">
 				</div>
 				<div class="block_button">
 					<input type="submit" name="submit" value="Add country">
