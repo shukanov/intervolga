@@ -2,7 +2,6 @@ a{
 	width:200px;
 	height:100px;
 	position: absolute;
-	margin-top: 100px;
 	background: yellow;
 }
 .block {
@@ -11,6 +10,5 @@ a{
 	background: url(image.png) no-repeat;
 	background-size: contain;
 	position: absolute;
-	margin-top: -100px;
 }
 
