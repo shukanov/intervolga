@@ -1,10 +1,4 @@
-<?php /*
-$connect = mysqli_connect('127.0.0.1', 'root', '', 'test_bd');
-if($connect == false)
-{
-	echo mysqli_connect_error();
-	die();
-}*/
+<?php 
 	$dsn = 'mysql:dbname=test_bd;host=127.0.0.1';
 	$user = 'root';
 	$password = '';
@@ -14,5 +8,4 @@ if($connect == false)
 	} catch (PDOException $e) {
 		echo 'Подключение не удалось: ' . $e->getMessage();
 	}
-
 ?>
