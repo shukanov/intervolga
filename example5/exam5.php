@@ -18,8 +18,8 @@
 				$requery = 'SELECT * FROM countries';
 				foreach ($dbh->query($requery) as $row){?> 
 				<tr>
-					<td><?= print_r($row['title']);?></td>
-					<td><?= print_r($row['population']);?></td>
+					<td><?= $row['title'];?></td>
+					<td><?= $row['population'];?></td>
 				</tr>
 				<?php }  ?>						
 		</table>
@@ -46,10 +46,10 @@
 				?>
 				<h3>Add country</h3>
 				<div class="block_input">
-					<input type="text" id="title_country" name="title_country" placeholder="The name of the country">
+					<input type="text" name="title_country" placeholder="The name of the country">
 				</div>
 				<div class="block_input">
-					<input type="text" id="population_country" name="population_country" placeholder="Country population">
+					<input type="text" name="population_country" placeholder="Country population">
 				</div>
 				<div class="block_button">
 					<input type="submit" name="submit" value="Add country">
